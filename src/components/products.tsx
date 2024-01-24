@@ -16,8 +16,8 @@ export default function Products() {
             </span>
             <div className="product-container">
                 {
-                    images.map(c => (
-                        <div className="products-item">
+                    images.map((c, i) => (
+                        <div className="products-item" key={i}>
                             <div className="image-product">
                                 <Image src={c} alt='product preview' className={loading ? 'customImage' : ''} onLoad={() => setLoading(false)} />
                             </div>
