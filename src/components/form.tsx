@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export const Form = () => {
     const form = useRef();
 
-    const notify = () => toast.error("Wow so easy!");
+    const notify = () => toast.error("Something went wrong!");
 
     const sendEmail = async (e: any) => {
         e.preventDefault();
@@ -22,15 +22,12 @@ export const Form = () => {
     };
 
     return (
-        <>
-
-            <form ref={form} onSubmit={sendEmail} >
-                <input type="text" name="from_name" required placeholder='Ваше имя' />
-                <input type="number" name="email_id" placeholder='Ваш номер телефона' />
-                <textarea name="message" required placeholder='Дополнительный комментарий' />
-                <input type="submit" value="Отправить" />
-            </form>
+        <form ref={form} onSubmit={sendEmail} >
+            <input type="text" name="from_name" required placeholder='Ваше имя' />
+            <input type="number" name="email_id" placeholder='Ваш номер телефона' />
+            <textarea name="message" required onInvalid={notify} placeholder='Дополнительный комментарий' />
+            <input type="submit" value="Отправить" />
             <ToastContainer />
-        </>
+        </form>
     );
 };
