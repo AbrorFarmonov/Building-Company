@@ -10,7 +10,7 @@ export default function About() {
             </div>
             <div className="right-about">
                 <p>Широкий ассортимент, сотни довольных клиентов!</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f1DmuVOk_Ec?si=BKumEvUrICUna-ci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f1DmuVOk_Ec?si=BKumEvUrICUna-ci" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>
     )
