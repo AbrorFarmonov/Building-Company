@@ -5,11 +5,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const Form = () => {
-    const form = useRef();
+    const form = useRef(null);
 
     const notify = () => toast.error("Something went wrong!");
 
-    const sendEmail = async (e: any) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_9ynovw8', 'template_klpiu1p', form.current, 'fR5GwlLPYBarn04Uo')
