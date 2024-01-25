@@ -19,7 +19,7 @@ body {
     background-position: center;
     color: white;
 
-    header {
+    .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -40,7 +40,7 @@ body {
             }
         }
 
-        button {
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -65,7 +65,7 @@ body {
         transform: rotate(45deg);
     }
 
-    main {
+    .main {
         display: flex;
         justify-content: space-between;
         align-items: start;
@@ -316,8 +316,82 @@ body {
         padding-left: 20px;
         border-left: 1px solid gray;
 
+        .banner-contact {
+            background-image: url('../assets/contact.png');
+            width: 100%;
+            height: 287px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                color: #FFF;
+                font-size: 40px;
+                font-weight: 600;
+                max-width: 487px;
+                margin: 0px auto;
+            }
+        }
+
         .link-for-prices {
             margin-top: 56px;
         }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 100px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        li,
+        span {
+            font-size: 14px;
+        }
+
+        li,
+        li a {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .left-footer {
+        display: flex;
+        gap: 33px;
+        width: 45%;
+
+    }
+
+    .right-footer {
+        width: 55%;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+.bottom-footer {
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 27px;
+    padding: 35px 0px;
+
+    span {
+        font-size: 14px;
     }
 }

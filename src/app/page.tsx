@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Main from "@/components/main";
 import Products from "@/components/products";
@@ -19,6 +20,7 @@ export default function Home() {
         <Products />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </>
   );
