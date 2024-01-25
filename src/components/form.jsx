@@ -23,10 +23,10 @@ export const Form = () => {
 
     return (
         <form ref={form} onSubmit={sendEmail} >
-            <input type="text" name="from_name" required placeholder='Ваше имя' />
-            <input type="number" name="email_id" placeholder='Ваш номер телефона' />
-            <textarea name="message" required onInvalid={notify} placeholder='Дополнительный комментарий' />
-            <input type="submit" value="Отправить" />
+            <input className='uni-input' type="text" name="from_name" required placeholder='Ваше имя' />
+            <input className='uni-input' type="number" name="email_id" placeholder='Ваш номер телефона' />
+            <textarea className='uni-input' name="message" required onInvalid={notify} placeholder='Дополнительный комментарий' />
+            <input className='uni-input' type="submit" value="Отправить" />
             <ToastContainer />
         </form>
     );
