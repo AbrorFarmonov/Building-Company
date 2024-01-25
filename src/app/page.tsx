@@ -1,7 +1,9 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Header from "@/components/header";
 import Main from "@/components/main";
 import Products from "@/components/products";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <div className="container">
         <About />
         <Products />
+        <Projects />
+        <Contact />
       </div>
     </>
   );

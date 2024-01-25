@@ -34,6 +34,9 @@ export default function Products() {
                 }
 
             </div>
+            <div className="link-container">
+                <a className="link-for-prices" href="https://drive.google.com/file/d/1BnpK4-a7mFYsuTeC2XmXGN76dcXV3XtJ/view?usp=sharing" target="_blank">Скачать прайс-лист</a>
+            </div>
         </div>
     )
 }

@@ -97,7 +97,6 @@ body {
                 font-size: 16px;
                 font-weight: 500;
                 background: var.$textSecondary;
-                border-radius: 8px;
                 margin-top: 26px;
             }
         }
@@ -178,6 +177,22 @@ body {
 .product-page {
     margin-top: 92px;
 
+
+    .link-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+
+        .link-for-prices {
+            display: inline-block;
+            background-color: var.$textSecondary;
+            padding: 16px 39px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
     .starter-section {
         margin-bottom: 50px;
     }
@@ -236,13 +251,19 @@ body {
     }
 }
 
+.projects-page {
+    .not-same-starter {
+        width: 150px;
+    }
+}
+
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 ::placeholder {
     color: rgba(255, 255, 255, 0.70);
-}
-
-.customImage {
-    filter: blur(30px);
-    scale: 1.2;
-    overflow: hidden;
 }
