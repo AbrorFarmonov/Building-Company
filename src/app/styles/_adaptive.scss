@@ -1,0 +1,121 @@
+@media screen and (max-width: 1440px) {
+    .main {
+        margin-top: 15vh !important;
+    }
+
+    .container {
+        max-width: 1000px;
+
+
+        .for-phone {
+            display: none !important;
+        }
+
+        .product-container {
+            grid-template-columns: repeat(3, auto);
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 650px;
+
+        .for-phone {
+            display: block !important;
+        }
+
+        .for-laptop {
+            display: none !important;
+        }
+
+        .main {
+            flex-direction: column;
+            margin-top: 50px;
+            text-align: center;
+            padding-bottom: 30px;
+
+            .right-main {
+                margin: 0px auto;
+            }
+
+            .left-main {
+                gap: 15px;
+            }
+
+            button {
+                margin: 10px auto 40px;
+            }
+        }
+
+        .about-page {
+            flex-direction: column-reverse;
+
+            .right-about {
+                width: 100%;
+
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .left-about {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        .product-container {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        .contact-page, footer {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        footer {
+            .left-footer,
+            .right-footer {
+                width: 100%;
+            }
+        }
+
+        .contact-page {
+
+            .left-contact,
+            .right-contact {
+                width: 100%;
+                border: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 90%;
+
+        .service-menu {
+            display: none;
+        }
+
+        .product-container {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+}

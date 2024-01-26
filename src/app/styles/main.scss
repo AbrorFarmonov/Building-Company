@@ -9,6 +9,14 @@ body {
 .container {
     max-width: 1220px;
     margin: 0px auto;
+
+    .for-phone {
+        display: block;
+    }
+
+    .for-laptop {
+        display: none;
+    }
 }
 
 .enter-page {
@@ -25,9 +33,22 @@ body {
         align-items: center;
         padding: 20px 0px;
 
-        .logo a {
-            font-size: 30px;
-            font-weight: 700;
+        .service-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:65%;
+        }
+
+        .logo {
+            width: 35%;
+            display: flex;
+            justify-content: start;
+
+            a {
+                font-size: 30px;
+                font-weight: 700;
+            }
         }
 
         nav {
@@ -147,8 +168,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
+    gap: 50px;
 
     .left-about {
+        width: 50%;
         h2 {
             margin-top: 35px;
             font-size: 30px;
@@ -163,6 +186,7 @@ body {
     }
 
     .right-about {
+        width: 50%;
         p {
             color: rgba(0, 0, 0, 0.50);
             font-size: 14px;
@@ -193,7 +217,7 @@ body {
 
 .product-page {
     margin-top: 92px;
-
+    margin-bottom: 30px;
 
     .link-container {
         display: flex;
@@ -395,3 +419,5 @@ footer {
         font-size: 14px;
     }
 }
+
+@import './adaptive'
